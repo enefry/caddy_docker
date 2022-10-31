@@ -34,8 +34,8 @@ module() {
         github.com/hacdias/caddy-minify v1.0.2
         github.com/nicolasazrak/caddy-cache v0.3.4
         github.com/pquerna/cachecontrol v0.0.0-20180517163645-1555304b9b35 // indirect
-        github.com/caddyserver/forwardproxy
-        github.com/mastercactapus/caddy-proxyprotocol
+        github.com/caddyserver/forwardproxy v0.0.0-20190707023537-05540a763b63
+        github.com/mastercactapus/caddy-proxyprotocol v0.0.3
     )
 EOF
     # main and telemetry
