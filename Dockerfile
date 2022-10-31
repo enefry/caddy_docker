@@ -25,10 +25,8 @@ COPY --from=builder /install/caddy /usr/bin/caddy
 RUN /usr/bin/caddy -version
 RUN /usr/bin/caddy -plugins
 
-EXPOSE 80 443 2015
-VOLUME /root/.caddy /www
-WORKDIR /www
+EXPOSE 80 443
 
-COPY Caddyfile /caddy/Caddyfile
+COPY Caddyfile /etc/caddy/Caddyfile
 
-CMD ["caddy","--conf", "/caddy/Caddyfile", "--log", "stdout", "--agree"]
+CMD ["caddy","--conf", "/etc/caddy/caddy.conf", "--log", "stdout", "--agree"]
