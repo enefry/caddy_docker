@@ -34,6 +34,8 @@ module() {
         github.com/hacdias/caddy-minify v1.0.2
         github.com/nicolasazrak/caddy-cache v0.3.4
         github.com/pquerna/cachecontrol v0.0.0-20180517163645-1555304b9b35 // indirect
+        github.com/caddyserver/forwardproxy v1.0.1
+        github.com/mastercactapus/caddy-proxyprotocol v0.0.3
     )
 EOF
     # main and telemetry
@@ -55,6 +57,10 @@ EOF
 
         "github.com/caddyserver/caddy/caddytls"
         "github.com/go-acme/lego/v3/providers/dns/dnspod"
+        _ "github.com/mastercactapus/caddy-proxyprotocol"
+        _ "github.com/caddyserver/dnsproviders"
+        _ "github.com/caddyserver/forwardproxy"
+        _ "github.com/caddyserver/dnsproviders/cloudflare"
         _ "github.com/echocat/caddy-filter"
         _ "github.com/nicolasazrak/caddy-cache"
         _ "github.com/hacdias/caddy-minify"
