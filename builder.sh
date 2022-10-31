@@ -58,7 +58,6 @@ EOF
         "github.com/caddyserver/caddy/caddytls"
         "github.com/go-acme/lego/v3/providers/dns/dnspod"
         _ "github.com/mastercactapus/caddy-proxyprotocol"
-        _ "github.com/caddyserver/dnsproviders"
         _ "github.com/caddyserver/forwardproxy"
         _ "github.com/caddyserver/dnsproviders/cloudflare"
         _ "github.com/echocat/caddy-filter"
