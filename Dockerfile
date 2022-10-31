@@ -29,4 +29,4 @@ EXPOSE 80 443
 
 COPY Caddyfile /etc/caddy/Caddyfile
 
-CMD ["caddy","--conf", "/etc/caddy/caddy.conf", "--log", "stdout", "--agree"]
+CMD ["caddy","--conf", "/etc/caddy/Caddyfile", "--log", "stdout", "--agree"]
